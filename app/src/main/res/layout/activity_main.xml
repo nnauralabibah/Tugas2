@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="150dp"
+        android:layout_marginTop="30dp"
+        android:text="Kalkulator"
+        android:textSize="25sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Angka 1"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/et_angka1"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Angka 2"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/et_angka2"
+        android:inputType="number"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih Operasi:"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:textSize="18sp"
+        />
+
+    <RadioGroup
+        android:id="@+id/rg_operator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:id="@+id/rb_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_multiply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_divide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Hitung"
+        android:id="@+id/btn_Hitung"
+        />
+
+</LinearLayout>
